@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1 id="title"> Web Developer's Survey Form</h1>
+        <p id="description">...this is to help us plan better in the future</p>
+
+            <form id="survey-form">
+                <p>
+                    <label for="name" id="name-label"> Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </p>
+                <p>
+                    <label for="email" id="email-label"> Email:</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </p>
+                <p>
+                    <label for="number" id="number-label"> Your age:</label>
+                    <input type="number" id="number" name="number" required min="5" max="90">
+                </p>
+                <!-- <p> -->
+                    <fieldset>
+                        <legend><strong> Gender</strong></legend>
+                        <ul>
+                            <li>
+                                <label for="male">
+                                    <input type="radio" id="male" name="gender">Male
+                                </label>
+                            </li>
+                            <li>
+                                <label for="female">
+                                    <input type="radio" id="female" name="gender">Female
+                                </label>
+                            </li>
+                            <li>
+                                <label for="other">
+                                    <input type="radio" id="other" name="gender">Other
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                <!-- </p> -->
+                <p id="qualification">
+                    <label for="qualification" >Qualifications: </label>
+                    <select name="school-attended" id="school">
+                        <option value="none">None</option>
+                        <option value="primary">primary</option>
+                        <option value="secondary">O-Level</option>
+                        <option value="edu">NCE</option>
+                        <option value="poly">OND/HND</option>
+                        <option value="uni">University</option>
+                        <option value="msc">Masters</option>
+                        <option value="doc">PhD</option>
+                        <option value="other">Others</option>
+                    </select>
+                </p>
+                <p class="comps">
+                    <h4>Do you have a computer?</h4>
+                    <div class="comp questionA">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="comp">
+                    </div>
+                    <div class="comp questionA">
+                        <label for="yes">No</label>
+                        <input type="radio" id="no" name="comp">
+                    </div>
+                </p>
+                <p class="comps">
+                    <h4>If yes, what type?</h4>
+                    <div class="comp questionB">
+                        <label for="comp-type">PC</label>
+                        <input type="radio" id="pc" name="comp-type">
+                    </div>
+                    <div class="comp questionB">
+                        <label for="comp-type">Laptop</label>
+                        <input type="radio" id="lappy" name="comp-type">
+                    </div>    
+                    <div class="comp questionB">
+                        <label for="comp-type">Others</label>
+                        <input type="radio" id="others" name="comp-type">
+                    </div>
+                </p>    
+                <p class="lang-type">
+                    <h4>What program would you like to learn?</h4>
+                    <ul class="lang">
+                        <li class="course">
+                            <label for="python">Python</label>
+                            <input type="checkbox" checked id="python" name="python" value="python">
+                        </li>
+                        <li class="course">
+                            <label for="javascript">Javascript</label>
+                            <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                        </li>
+                        <li  class="course">
+                            <label for="ruby">Ruby</label>
+                            <input type="checkbox" id="ruby" name="ruby" value="ruby">
+                        </li>
+                        <li class="course">
+                            <label for="java">Java</label>
+                            <input type="checkbox" id="java" name="java" value="java">
+                        </li>
+                    </ul>    
+                </p>
+                <p type="message">
+                    <label for="msg">Message:</label>
+                    <textarea id="submit" name="user_message" maxlength="250" placeholder="Drop your message here..."></textarea>
+                </p>
+         <p> <button type="submit">Submit form</button> </p>
+    </form>
+</section>
+</body>
+</html>

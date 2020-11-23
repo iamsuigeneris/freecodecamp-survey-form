@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+body {
+    background: #222;
+}
+section{
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    background: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    overflow: hidden;
+}
+form{
+    position: relative;
+    width: 700px;
+    padding: 1rem;
+    margin: 2rem auto;
+    border: 1px solid #000;
+    border-radius: 5px; 
+}
+ul{
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+}
+label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+#title{
+    padding-top: 0.8rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: gray;
+}
+input, textarea {
+    font: 1em sans-serif;
+    padding: 10px;
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+fieldset input{
+    margin: 0 5px;
+    border: 1px solid #999;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: auto;
+    border: none;
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+#qualification{
+    display:block;
+  
+    width: 80%;
+    margin-left: 68px;
+    text-align: left;
+}
+#qualification select{
+    width: 150px;
+    margin-left: 3px;
+    padding: 5px 2px;
+    font-size: 1rem;
+    border-color: #ccc;
+}
+.comps{
+    display: block;
+}
+h4{
+    display: block;
+    width: 50%;
+    margin-left: 193px;
+    padding: 5px;
+    text-align: left;
+}
+.comp{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    margin-left: 74px;
+}
+.comp label,
+.comp input[type=radio]{
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 5px;
+    width: 2rem;
+}
+.questionB input{
+    margin-left:10px; 
+}
+textarea {
+    vertical-align: top;
+    height: 7em;
+    resize: none;
+    border-radius: 5px;
+} 
+fieldset {
+    width: 400px;
+    margin-left: 194px;
+    border: 1px solid #999;
+}
+.lang{
+    display: flex;
+    flex-direction: column;
+    margin-left: 170px;
+    text-align: end;
+}
+.lang .course{
+    margin: 3px;
+    padding-left: 3px;
+    width: 30%; 
+    display: block; 
+} 
+p {
+    display: block;
+    margin: 1rem;  
+} 
+#description{
+    font-size: 1.2rem;
+    color: #aaa111;
+}
+button{
+    display: block;
+    background:transparent;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: inherit;
+    width: 63%;
+    margin-left: 180px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #2196f3;
+    color: #fff;
+    transition: all 0.4s ease;
+} 
+button:hover{
+    background: transparent;
+    color: #2196f3;
+}
+
+/* mobile version */
+@media (max-width:480px){
+    section{
+        width: 100%;
+    }
+    form{
+        width: 400px;
+    }
+    label,input{
+        width: 300px;
+    }
+    label{
+        margin-bottom: 4px;
+        text-align: start;
+    }
+    fieldset{
+        margin: 0 60px;
+        width: 150px;
+        margin-left: 32px;
+    }
+    ul{
+        flex-direction: column;
+        padding: 5px;
+    }
+    legend{
+        display: inline-block;
+    }
+    #qualification{
+        display: flex;
+        margin-left: 32px;
+    }
+    #qualification select {
+        width: 450px;
+    }
+    h4{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .lang {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .lang .course {
+        position: relative;
+        padding-left: 3px;
+        width: 40%;
+        display: inherit;
+     
+    }
+    .lang .course input{
+        position: absolute;
+        right: 30px;
+        top: 3px;
+    }
+    textarea{
+        width: 300px;
+    }
+    button{
+        width: 90%;
+        margin-left: 15px;
+    }
+}
