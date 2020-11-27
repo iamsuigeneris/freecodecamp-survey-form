@@ -90,8 +90,9 @@ h4{
 .comp{
     display: inline-block;
     width: 50%;
-    text-align: left;
+    text-align: left; 
     margin-left: 74px;
+    position: relative;
 }
 .comp label,
 .comp input[type=radio]{
@@ -99,9 +100,15 @@ h4{
     text-align: left;
     margin-bottom: 5px;
     width: 2rem;
+   
 }
-.questionB input{
-    margin-left:10px; 
+.comp label{
+    position: absolute;
+    left: 2em;
+}
+.comp input[type=radio] {
+    position: absolute;
+    left: .1em;
 }
 textarea {
     vertical-align: top;
@@ -155,15 +162,15 @@ button:hover{
 }
 
 /* mobile version */
-@media (max-width:480px){
+@media (max-width:400px){
     section{
         width: 100%;
     }
     form{
-        width: 400px;
+        width: 20em;
     }
     label,input{
-        width: 300px;
+        width: 16em;
     }
     label{
         margin-bottom: 4px;
@@ -171,8 +178,8 @@ button:hover{
     }
     fieldset{
         margin: 0 60px;
-        width: 150px;
-        margin-left: 32px;
+        width: 10em;
+        margin-left: 1em;
     }
     ul{
         flex-direction: column;
@@ -191,6 +198,7 @@ button:hover{
     h4{
         width: 100%;
         margin-left: 30px;
+        font-size: 0.8em;
     }
     .lang {
         display: flex;
@@ -209,14 +217,17 @@ button:hover{
     }
     .lang .course input{
         position: absolute;
-        right: 30px;
+        right: 6.5em;
         top: 3px;
     }
     textarea{
-        width: 300px;
+        width: 16em;
     }
     button{
         width: 90%;
         margin-left: 15px;
+    }
+    .comp{
+        margin-left: 4px;
     }
 }
